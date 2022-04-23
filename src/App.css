@@ -1,0 +1,219 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/*=================================
+ Login Start
+=================================*/
+ .user_switch_btn{
+   cursor: pointer;
+ }
+ .user_switch_btn:hover{
+   color: rgb(25, 113, 148) !important;
+ }
+/*=================================
+ Contact Form Start
+=================================*/
+
+
+/*=================================
+ 404 Error Start
+=================================*/
+ .page_error{
+    width: 30%;
+ }
+ .doctor-not-avail{
+   width: 300px !important;
+   height: 300px;
+ }
+/*=================================
+ Admin Login Form Start
+=================================*/
+ .admin_form{
+    height: 100vh;
+ }
+ .admin_form > form{
+   width: 35%;
+ }
+/*=================================
+ Admin Dashboard Start
+=================================*/
+.rdrSelected {
+  left: 2px;
+  right: 2px;
+}
+.rdrDayToday .rdrDayNumber{
+  background: #96C93D !important;
+  left: 2px;
+  right: 2px;
+  border-radius: 1.042em !important;
+}
+.rdrDayToday .rdrDayNumber span{
+  color: #fff !important;
+}
+.rdrDayToday .rdrDayNumber span:after{
+  background: #96C93D !important;
+}
+.rdrDateDisplayWrapper, .rdrMonth, .rdrMonthAndYearWrapper{
+  width: 100%;
+}
+.date-range span.icon{
+  font-size: 1.1rem;
+}
+.time-box button{
+  width: 100px !important;
+}
+.book-btn{
+  width: 200px;
+}
+.warning-res{
+  background-color: #233632d5 !important;
+}
+.form-label{
+  font-size: 1.1rem;
+}
+
+/*=================================
+Loader Start
+=================================*/
+.loader_box{
+  width: 100vw;
+  height: 100vh;
+  position:fixed;
+  z-index: 90000;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  background-color: #f3d7d74b;
+}
+.swal2-container{
+  z-index: 110000;
+}
+/*=================================
+Pagination Start
+=================================*/
+.cursor-disbled a{
+  cursor: url("../public/assets/img/error/disabled2.png"),auto;
+}
+/*=================================
+Login click Start
+=================================*/
+.user_details_content{
+  width: 150px;
+  background: rgb(255, 255, 255);
+  /* height: 100px; */
+  position: absolute;
+  z-index: 200;
+  margin-top: 22px;
+  display: none;
+}
+.user_details {
+  cursor: pointer;
+}
+.user_details_content .list{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+}
+.user_details_content.active{
+   display: block;
+}
+.user_details_content .list:hover{
+  text-decoration: none;
+}
+
+.resend-otp-btn{
+  padding: 5px;
+  font-size: 8px !important
+}
+.modal-body input{
+  user-select: none;
+}
+
+/*=================================
+doctor profile Start
+=================================*/
+.profile-photo .img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 2px solid rgba(168, 166, 166, 0.45);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.profile-photo .img span{
+  font-size: 100px;
+  color:rgba(168, 166, 166, 0.45);
+}
+.profile-photo .img input{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+.profile-photo .img .camera{
+  position: absolute;
+  font-size: 35px;
+  color: #96C93D;
+  bottom: 5%;
+  right: 10%;
+}
+.modal{
+  z-index: 10000;
+}
+@media only screen and (max-width:600px){
+  .my_form {
+    width: 100% !important;
+}
+.admiForm{
+  margin-top: 50px !important;
+}
+.btn{
+  padding: 4px !important;
+  font-size: 1rem !important;
+}
+.form-control{
+  height: 40px !important;
+}
+.update_status{
+  width: 120px !important;
+}
+}
