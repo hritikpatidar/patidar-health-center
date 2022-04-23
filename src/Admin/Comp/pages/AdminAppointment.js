@@ -18,7 +18,7 @@ export default function AdminAppointment() {
     });
 
     const Navigate = useNavigate()
-    const [page, setPage] = useState(1)
+    //const [page, setPage] = useState(1)
     useEffect(() => {
       if(!window.localStorage.getItem("jwt-token")){
         Navigate("/admin")

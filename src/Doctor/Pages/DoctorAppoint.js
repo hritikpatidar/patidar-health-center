@@ -53,9 +53,9 @@ export default function AdminAppointment() {
   }
 // delete appointment
   const statusHandler = async (e)=>{
-    var row = e.target.closest("tr")
+    //var row = e.target.closest("tr")
     var id = e.target.closest("tr").querySelector("td:first-child span").innerHTML
-    var statusCon = e.target.closest("tr").querySelector("td:nth-child(7) span")
+    var statusCon = e.target.closest("tr").querySelector("td:nth-child(7) span");
         statusCon.innerHTML=e.target.value
         if(statusCon.innerHTML==="Success"){
           statusCon.setAttribute("class", "text-primary")

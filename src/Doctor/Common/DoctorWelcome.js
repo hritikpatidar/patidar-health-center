@@ -2,8 +2,8 @@
 import React, {  useEffect, useState } from "react";
 import { Link, NavLink, useNavigate } from "react-router-dom";
 import DoctorProfile from "../Pages/DoctorProfile";
-var CryptoJS = require("crypto-js");
-const confing = require("../../config.json")
+//var CryptoJS = require("crypto-js");
+//const confing = require("../../config.json")
 export default function DoctorWelcome(props) {
   //State Area
   const [profileActive, setProfileActive] = useState(false);

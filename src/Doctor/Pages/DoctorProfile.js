@@ -18,7 +18,7 @@ export default function DoctorProfile() {
 useEffect(()=>{
   doctorAppointRecord()
   doctorInfo()
-},[])
+})
 //data destructuring 
   const {fname, lname, email, mobile, specialist} = userData.data
   //doctor get info
@@ -59,11 +59,11 @@ const doctorAppointRecord = async ()=>{
 }
 //filter for getting reacords
   const ratioReacord = (status) =>{
-    var data = ratio.data.filter((ele)=>{
-      if(ele.status===status){
-        return ele 
-      }
-    })
+    var data = ratio.data.filter(function (ele) {
+        if (ele.status === status) {
+          return ele
+        }
+      });
     return data.length
   }
 //update profile Handler
