@@ -1,0 +1,34 @@
+{
+  "name": "patidar-health-frontend",
+  "private": true,
+  "version": "2.0.0",
+  "type": "module",
+  "engines": {
+    "node": ">=20.19.0"
+  },
+  "scripts": {
+    "dev": "vite --host 0.0.0.0",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "axios": "latest",
+    "crypto-js": "latest",
+    "date-fns": "latest",
+    "jspdf": "latest",
+    "jspdf-autotable": "latest",
+    "react": "latest",
+    "react-dom": "latest",
+    "react-date-range": "latest",
+    "react-datepicker": "latest",
+    "react-country-region-selector": "latest",
+    "react-google-charts": "latest",
+    "react-paginate": "latest",
+    "react-router-dom": "latest",
+    "sweetalert2": "latest"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "latest",
+    "vite": "latest"
+  }
+}
