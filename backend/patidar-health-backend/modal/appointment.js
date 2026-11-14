@@ -20,4 +20,3 @@ appointmentShema.index(
 const Appointment = mongoose.model("Appointment", appointmentShema);
 
 export default Appointment;
- //asdf
